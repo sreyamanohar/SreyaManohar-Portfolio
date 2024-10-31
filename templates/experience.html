@@ -1,0 +1,95 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+</script> 
+<title>Portfolio</title> 
+</head> 
+<body> 
+<nav class="navbar navbar-expand-sm "> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapse_Navbar"> 
+    <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="collapse_Navbar"> 
+    <ul class="navbar-nav"> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('home') }}">Profile</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('experience') }}">Experience</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('projects') }}">Projects</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="#contact-us">Contact Us</a> 
+        </li> 
+    </ul> 
+    </div> 
+</nav> 
+<br>
+
+<div class="section" id="about"> 
+    <div class="container"> 
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10"> 
+        <div class="row"> 
+        <div class="col-lg-6 col-md-12"> 
+            <div class="card-body"> 
+            <div class="h4 mt-0 title">Professional Experience </div> 
+            <p>Total Experience: 5.4 Years </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10" style="margin-top: 20px;margin-bottom: 50px;"> 
+        <div class="row"> 
+        
+            <div class="card-body"> 
+            <p><b>06/2024-10/2024    System Developer at Centerpoint Cooperative,Tokyo,Japan </b></p>
+            <ul>
+                <li>FastAPI Development:Developed and integrated a FastAPI application for   seamless  interaction with Notion databases.
+Technologies Used:Python, Fastapi, Notion, Sqlite, VScode
+</li>
+                <li>Development of JobBoard Website
+      Technologies Used: WordPress, Bootstrap, PHP, HTML.
+</li>
+            </ul>
+
+            <p><b>08/2021-07/2023    System Developer at Trust Technology Corporation,Tokyo,Japan
+            </b></p>
+            <ul>
+                <li>Develop and maintain company database
+           MS Access, SQL
+</li>
+                <li>PC setup</li>
+                <li>IT Support</li>
+                <li>Server Management</li>
+            </ul>
+            <p><b>01/2016-12/2018    Software testing trainer at CYCORETECH INFO SOLUTIONS,India. </b></p>
+            <ul>
+                <li>Training provided in manual testing</li>
+                <li>SDLC, STLC</li>
+                <li>preparing Bug report, test cases</li>
+                <li>Different levels of testing</li>
+                <li>Testing techniques</li>
+                <li>Special test types</li>  
+
+            </ul>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</div>

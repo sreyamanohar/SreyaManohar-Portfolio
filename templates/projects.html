@@ -1,0 +1,109 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+</script> 
+<title>Portfolio</title> 
+</head> 
+<body> 
+<nav class="navbar navbar-expand-sm "> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapse_Navbar"> 
+    <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="collapse_Navbar"> 
+    <ul class="navbar-nav"> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('home') }}">Profile</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('experience') }}">Experience</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ url_for('projects') }}">Projects</a> 
+        </li> 
+        <li class="nav-item"> 
+        <a class="nav-link text-white" href="#contact-us">Contact Us</a> 
+        </li> 
+    </ul> 
+    </div> 
+</nav> 
+<br>
+
+<div class="section" id="about"> 
+<div class="container"> 
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10"> 
+        <div class="row"> 
+            <div class="card-body"> 
+            <div class="h4 mt-0 title">Project Details</div> 
+            </div>
+        </div>   
+    </div>
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10" style="margin-top: 20px;"> 
+        <div class="row"> 
+            <div class="card-body"> 
+                        <b>Development of Fastapi for Notion DB Integration(06/2024-10/2024    )</b><br><br>
+                        <b>Project details:</b> <br>The project involves developing a FastAPI application that interacts with a Notion database, specifically a to-do list app. The application fetches tasks from the Notion database and sends email notifications for any tasks that are not marked as completed.<br>
+                        <b>Key Features:</b><br>
+                        •   Data Retrieval: Implemented GET endpoints to fetch tasks from the Notion to-do list database.
+                        •   Task Management: Developed POST endpoints to create new tasks, users, and posts, which are stored in an SQLite database for efficient management. 
+                        •   Email Notifications: Automatically send emails for tasks that are still pending.<br>
+                              <b>Technologies Used:</b><br>
+                        •   Python • FastAPI • Notion API • SQLite • Email Service: SMTP
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10" style="margin-top: 20px;"> 
+        <div class="row"> 
+            <div class="card-body"> 
+                        <b>Job Board Website Development(06/2024-10/2024)</b><br><br>
+                        <b>Project details:</b> <br>Developed a job board website that connects job seekers with employers, providing a user-friendly platform for job postings and applications.<br>
+                        <b>Key Features:</b><br>
+                        •   User Registration/Login: Implemented secure user authentication for job seekers and employers.
+•   Job Posting: Enabled employers to post job openings easily.
+•   Search Functionality: Integrated search and filter options for job seekers to find relevant positions.
+•   Responsive Design: Utilized Bootstrap for a mobile-friendly layout, ensuring a seamless user experience across devices.
+<br>
+                              <b>Technologies Used:</b><br>
+                        • WordPress • Bootstrap • HTML • PHP
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="card aos-init aos-animate"
+        data-aos="fade-up" data-aos-offset="10" style="margin-top: 20px;margin-bottom: 50px;" > 
+        <div class="row"> 
+            <div class="card-body"> 
+                        <b>Hotel Management system ( 01/2016-12/2018)</b><br><br>
+                        <b>Project details:</b> <br>Hotel Management System is a Data base project. It is mainly focused on daily hotel
+       transactions in which access permission and password are different for each user logging in the HMS. 
+.<br>
+                        <b>Role and responsibilities:</b><br>
+                       •    In Manual Testing analyzed SRS document and detailed Test Plan. 
+•   Created Test Scenarios.  
+•   Executed testcases and prepared defect report for failed test cases
+
+<br>
+                              
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
